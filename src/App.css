@@ -1,0 +1,206 @@
+/* Reset and body styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: #f0f2f5;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 50px;
+  transition: background 0.3s ease;
+}
+
+/* Main container */
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Mode */
+.container.dark {
+  background: #1e1e1e;
+  color: #f0f0f0;
+}
+
+.container.dark input,
+.container.dark select {
+  background: #333;
+  color: white;
+  border: 1px solid #555;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.container.dark h1 {
+  color: #f0f0f0;
+}
+
+/* Dark Mode Toggle Button */
+.dark-mode-toggle {
+  background: #333;
+  color: #f0f0f0;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.dark-mode-toggle:hover {
+  background: #555;
+}
+
+/* Input section */
+.input-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-section input[type="text"],
+.input-section select,
+.input-section input[type="date"] {
+  flex: 1 1 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* Add button */
+.input-section button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.input-section button:hover {
+  background-color: #45a049;
+}
+
+/* Task list */
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Single task item */
+.task-item {
+  background: #fafafa;
+  padding: 12px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background 0.3s ease;
+}
+
+.task-item.completed {
+  text-decoration: line-through;
+  background-color: #d4edda;
+  color: #6c757d;
+}
+
+/* Task details */
+.task-details {
+  flex: 1;
+}
+
+/* Task actions */
+.task-actions {
+  display: flex;
+  gap: 5px;
+}
+
+/* Task text */
+.task-text {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Delete button */
+.delete-btn {
+  background: red;
+  border: none;
+  padding: 6px 10px;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: darkred;
+}
+
+/* Priority Left Border */
+.task-item {
+  border-left: 8px solid #ccc;
+}
+
+.progress-container {
+  background: #eee;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 12px;
+  margin: 10px 0;
+  position: relative;
+}
+
+.progress-bar {
+  background: #4caf50;
+  height: 12px;
+  transition: width 0.3s ease;
+}
+
+.filter-section {
+  margin: 15px 0;
+  display: flex;
+  gap: 10px;
+}
+
+.filter-section button {
+  background: #3498db;
+}
+
+.filter-section button:hover {
+  background: #2980b9;
+}
+
+.task-item {
+  transition: transform 0.2s ease;
+}
+
+.task-item:hover {
+  transform: scale(1.02);
+}
